@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Taskapp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= image_tag("logo.png", :width => 600) %>
+
+<%= yield %>
+
+
+<%= link_to "Home(route)", "/" %>
+
+<%= link_to "Home(projects)", projects_path %>
+
+<%= link_to "Yahoo", "http://www.yahoo.co.jp" %>
+
+</body>
+</html>
