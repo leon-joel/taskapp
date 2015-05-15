@@ -10,5 +10,6 @@ class Task < ActiveRecord::Base
   presence: { message: "タイトルを入力してください。" },   # 独自のメッセージを指定
   length: { minimum: 3, message: "タイトルの長さは3文字以上です。" }   # 日本語全角も1文字としてカウントされる
 
+  # 検索条件を unfinished という名前で保存している ※呼び出されるたびにSQLが実行されるようだ
   scope :unfinished, -> { where(done: false) }
 end

@@ -13,6 +13,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
+# ↑javascript runtime。lessをコンパイルするために必要
+
+
+gem 'less-rails' # Railsでlessを使えるようにする。Bootstrapがlessで書かれているため
+gem 'twitter-bootstrap-rails' # Bootstrapの本体
+### bootstrapの導入:  http://ruby-rails.hatenadiary.com/entry/20140801/1406818800
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
